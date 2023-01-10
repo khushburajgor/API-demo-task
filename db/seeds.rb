@@ -1,0 +1,8 @@
+user = User.create(username: 'Khushbu', email: 'Khushbu@gmail.com')
+first_post = Post.create(title: 'Trip to manali', description: 'Manali diaries', user_id: user.id)
+second_post = Post.create(title: 'Trip to Ladakh', description: 'ladakh diaries', user_id: user.id)
+Comment.create(post_id: first_post.id, user_id: user.id, description: 'Nice photo')
+Comment.create(post_id: second_post.id, user_id: user.id, description: 'Nice click')
+Comment.create(post_id: first_post.id, user_id: user.id, description: 'Wonderful')
+Comment.create(post_id: second_post.id, user_id: user.id, description: 'Such a beauty')
+Comment.create(post_id: second_post.id, user_id: user.id, description: 'Amazing')
